@@ -1,0 +1,32 @@
+// Polices
+$police-1: "Montserrat", sans-serif;
+$police-2: "Gloock", serif;
+
+//Couleurs
+$color-1: black;
+$color-2: rgb(0, 162, 255);
+$color-3: white;
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $police-1;
+  color: $color-1;
+}
+
+body {
+  max-width: 1480px;
+  border: 1px solid blue;
+}
+
+#root,
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

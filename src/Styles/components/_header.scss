@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 0 5px;
+    a {
+      text-align: center;
+    }
+    .selection {
+      background-color: $color-2;
+      color: $color-3;
+      border-radius: 20px;
+      padding: 5px;
+      aspect-ratio: 10/1;
+    }
+    .nonSelection {
+      padding: 5px;
+      aspect-ratio: 10/1;
+    }
+  }
+  h1 {
+    position: relative;
+    right: 8%;
+    color: $color-1;
+    font-family: $police-2;
+    text-shadow: 1px 1px 1px $color-2;
+  }
+}
