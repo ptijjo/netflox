@@ -5,3 +5,48 @@
   width: 100%;
   justify-content: space-between;
 }
+
+.barreDeTri {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  button {
+    width: 45%;
+    background-color: $color-2;
+    border: none;
+    color: $color-3;
+    cursor: pointer;
+    text-align: center;
+    font-size: medium;
+
+    .fleche {
+      color: $color-3;
+      font-size: medium;
+      margin-left: 3px;
+    }
+  }
+
+  .btnTop,
+  .btnTopActive {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .btnFlop,
+  .btnFlopActive {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .btnFlopActive,
+  .btnTopActive {
+    width: 45%;
+    background-color: $color-1;
+    border: none;
+    color: $color-3;
+    cursor: pointer;
+    text-align: center;
+    font-size: medium;
+  }
+}

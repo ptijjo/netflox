@@ -3,11 +3,27 @@ import React from 'react';
 const Affiches = (props) => {
 
     const liste = props.liste;
-    const key = props.key;
+
+    const dateUtc = (e) => {
+        return e.split("-").reverse().join("-")
+    }
+
 
     return (
-        <li key={key} className="affiche">
-            <img src={"https://image.tmdb.org/t/p/original/" + liste.poster_path} alt="" />
+        <li className="affiche">
+            <img src={liste.poster_patch !== null ? "https://image.tmdb.org/t/p/original/" + liste.poster_path : "./img/poster.jpg"} alt={"poster de " + liste.title} />
+            <h3> {liste.title}</h3>
+            <span>sortie le : {dateUtc(liste.release_date)}</span>
+            <span> {liste.vote_average}/10 <i className="fa-solid fa-star"></i></span>
+            <ul>{liste.genre_ids.map((genre, index) => (
+                <li key={index}>{genre}</li>
+            ))}</ul>
+            <div>
+                <h3>Synopsis</h3>
+                <p>{liste.overview}</p>
+            </div>
+
+            <button>Ajouter au coup de coeur</button>
 
 
         </li>
