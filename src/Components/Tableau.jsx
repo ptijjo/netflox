@@ -50,7 +50,7 @@ const Tableau = (props) => {
             </div>
             <ul className='tableau'>
                 {film.map((liste) => (
-                    <Affiches liste={liste} key={liste.id} />
+                    <Affiches liste={liste} key={liste.id} film={film} />
                 ))}
             </ul>
         </div>
