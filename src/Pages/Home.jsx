@@ -15,7 +15,6 @@ const Home = () => {
             <Header accueil="selection" favori="nonSelection" />
             <div className='barreRecherche'>
                 <input type="search" name="recherche" id="recherche" placeholder="Entrez le titre d'un film" className='recherche' onChange={(e) => setRecherche(e.target.value)} />
-                {/*<input type="button" value="Rechercher" className='btnRecherche' />*/}
                 <button type='submit' className='btnRecherche'> Rechercher</button>
             </div>
 

@@ -49,15 +49,15 @@ const Affiches = (props) => {
     return (
         <li className="affiche">
             <img src={liste.poster_patch !== null ? "https://image.tmdb.org/t/p/original/" + liste.poster_path : "./img/poster.jpg"} alt={"poster de " + liste.title} />
-            <h3> {liste.title}</h3>
-            <span>sortie le : {dateUtc(liste.release_date)}</span>
-            <span> {liste.vote_average}/10 <i className="fa-solid fa-star"></i></span>
-            <ul>{liste.genre_ids.map((genre, index) => (
+            <h3 className='titreFilm'> {liste.title}</h3>
+            <span className='dateSortie'>sortie le : {dateUtc(liste.release_date)}</span>
+            <span className='noteFilm'> {liste.vote_average}/10 <i className="fa-solid fa-star"></i></span>
+            <ul className='genreFilm'>{liste.genre_ids.map((genre, index) => (
                 <li key={index}>{genre}</li>
             ))}</ul>
-            <div>
+            <div className='synopsisFilm'>
                 <h3>Synopsis</h3>
-                <p>{liste.overview}</p>
+                <p className='resumeFilm'>{liste.overview}</p>
             </div>
 
             <button onClick={() => handleFavori(film)}>Ajouter au coup de coeur</button>

@@ -3,16 +3,66 @@
   aspect-ratio: 1/2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  //justify-content: center;
+  //align-items: center;
   margin-bottom: 20px;
   border-radius: 20px;
   background-color: $color-2;
   color: $color-3;
+  padding: 5px;
 
   img {
     width: 80%;
     aspect-ratio: 1/1;
     border-radius: 20%;
+    margin-top: 30px;
+  }
+  .titreFilm {
+    color: $color-3;
+    margin-top: 30px;
+  }
+  .dateSortie {
+    margin-top: 10px;
+  }
+
+  .noteFilm {
+    margin-top: 10px;
+    i {
+      color: yellow;
+    }
+  }
+
+  .genreFilm {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .synopsisFilm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    h3 {
+      color: $color-3;
+      text-align: center;
+    }
+    .resumeFilm {
+      margin-top: 10px;
+      text-align: justify;
+      height: 170px;
+      overflow: hidden;
+      text-overflow: clip;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    aspect-ratio: 6/1;
+    border-radius: 10px;
+    border: none;
+    font-size: large;
   }
 }

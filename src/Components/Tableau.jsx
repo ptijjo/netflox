@@ -40,8 +40,6 @@ const Tableau = (props) => {
         if (clickFlop === true) setClickFlop(false);
     };
 
-    console.log("sortie de la recherche --> ", film);
-
     return (
         <div>
             <div className='barreDeTri'>
